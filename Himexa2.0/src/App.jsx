@@ -6,7 +6,7 @@ import { datacontext} from './context/UserContext';
 import speakimg from "./assets/speak.gif"
 import  aigif from "./assets/aiVoice.gif"
 function App() {
-  let{recognition, speaking,setSpeaking, prompt,response}=useContext(datacontext)
+  let{recognition, speaking,setSpeaking, prompt,response,setPrompt,setResponse}=useContext(datacontext)
   
  
   return (
@@ -15,7 +15,9 @@ function App() {
       <span>I'm Himexa, Your Advanced Virtual Assistant</span>
       {!speaking?
       <button onClick={()=>{
+    setPrompt("listening..") 
     setSpeaking(true)
+    setResponse(false)
   recognition.start();
       }}>Click here <CiMicrophoneOn /></button>
       :
