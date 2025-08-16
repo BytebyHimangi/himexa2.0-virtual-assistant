@@ -21,7 +21,7 @@ function UserContext({ children }) {
     let newText = text.split("**") && text.split("*")&&text.replace("google", "Himangi Singh") && text.replace("Google", "Himangi Singh");
     setPrompt(newText);
     speak(newText);
-    setResponse(text);
+    setResponse(true);
     setTimeout(() => {
       setSpeaking(false);
     }, 5000);
@@ -39,14 +39,52 @@ function UserContext({ children }) {
 
   function takeCommand(command){
       if(command.includes("open") && command.includes
-      ("youtube")){
+    ("youtube")){
         window.open("https://www.youtube.com/", "_blank");
         speak("opening YouTube");
+        setResponse(true);
         setPrompt("opening YouTube..");
         setTimeout(() => {
             setSpeaking(false);
            }, 5000);
-    }
+    } else if(command.includes("open") && command.includes
+    ("google")){
+        window.open("https://www.google.com/", "_blank");
+        speak("opening google");
+        setResponse(true);
+        setPrompt("opening google..");
+        setTimeout(() => {
+            setSpeaking(false)
+           }, 5000);
+    } else if(command.includes("open") && command.includes
+    ("chatgpt")){
+        window.open("https://www.chatgpt.com/", "_blank");
+        speak("opening chatgpt");
+        setResponse(true)
+        setPrompt("opening chatgpt..");
+        setTimeout(() => {
+            setSpeaking(false);
+           }, 5000);
+    } else if(command.includes("time")){
+        let time=new Date().toLocaleString(undefined,
+        {hour:"numeric",minute:"numeric"})
+        speak(time)
+        setResponse(true)  
+        setPrompt(time);
+        setTimeout(() => {
+            setSpeaking(false);
+           }, 5000);
+     }
+     else if(command.includes("date")){
+        let date=new Date().toLocaleString(undefined,
+        {day:"numeric",month:"short"})
+        speak(date) 
+        setResponse(true) 
+        setPrompt(date);
+        setTimeout(() => {
+            setSpeaking(false);
+           }, 5000);
+        }
     else{
         aiResponse(command);
     }

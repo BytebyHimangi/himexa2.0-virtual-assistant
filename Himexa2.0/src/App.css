@@ -36,6 +36,8 @@ button{
 p{
   font-size: 1.5vmax;
   color: white;
+  text-align: center;
+  padding: 0px 40px;
 }
 .response{
   display: flex;
