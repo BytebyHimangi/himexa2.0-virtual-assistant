@@ -29,6 +29,7 @@ button{
   border: none;
   background-color:rgb(34, 221, 231);
   box-shadow: 2px 2px 50px rgb(34, 221, 231);
+  cursor:pointer;
 }
 #speak{
   width: 100px;
