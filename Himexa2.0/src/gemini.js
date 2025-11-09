@@ -1,4 +1,4 @@
-let apiKey="AIzaSyD_0ER7-J4Qb1XzqWAKDXrBLv_jPio9x6c";
+let apiKey="your_api_key_here";
 
 import {
     GoogleGenerativeAI,
@@ -10,7 +10,7 @@ import {
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const model = genAI.getGenerativeModel({
-    model: "gemini-1.5-flash", 
+    model: "gemini-2.0-flash", 
 });
 
 const generationConfig = {
