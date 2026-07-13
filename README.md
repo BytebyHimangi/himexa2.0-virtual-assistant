@@ -13,9 +13,9 @@ Himexa is an AI-powered virtual assistant built using React, Vite, and the Googl
 ## Tech Stack
 - React
 - Vite
-- JavaScript / TypeScript (जो भी use किया)
+- TypeScript 
 - Google Gemini API
-- Tailwind CSS (अगर use किया)
+- Tailwind CSS 
 
 ## My Role
 - Designed and developed the frontend
