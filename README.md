@@ -1,12 +1,31 @@
-# React + Vite
+# Himexa 2.0 - AI Virtual Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Himexa is an AI-powered virtual assistant built using React, Vite, and the Google Gemini API. It provides intelligent conversational responses and demonstrates the integration of modern frontend technologies with Generative AI.
 
-Currently, two official plugins are available:
+## Features
+- AI chat powered by Google Gemini API
+- Real-time conversational interface
+- Clean responsive UI
+- Fast performance with React + Vite
+- Easy to extend with new AI capabilities
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React
+- Vite
+- JavaScript / TypeScript (जो भी use किया)
+- Google Gemini API
+- Tailwind CSS (अगर use किया)
 
-## Expanding the ESLint configuration
+## My Role
+- Designed and developed the frontend
+- Integrated Gemini API
+- Built chat interface
+- Implemented prompt handling
+- Tested AI responses
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Future Improvements
+- Chat history
+- Voice input
+- File upload
+- Multiple AI models
